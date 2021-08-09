@@ -2,7 +2,7 @@
 
 /*
 Input: 4 3 6 2 1 1
-Output: Missing-5 Repeating
+Output: Missing-5 Repeating-1
 */
 
 #include <bits/stdc++.h>
