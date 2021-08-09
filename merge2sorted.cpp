@@ -1,3 +1,12 @@
+/*
+Input: ar1[] = 1 4 7 8 10
+       ar2[] = 2 3 9        
+
+Output: ar1[] = 1 2 3 4 7
+        ar2[] = 8 9 10
+*/
+
+
 #include<bits/stdc++.h>
 
 using namespace std;

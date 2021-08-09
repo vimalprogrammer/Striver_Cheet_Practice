@@ -1,3 +1,8 @@
+/*
+Input: 2 5 9 6 9 3 8 9 7 1
+Output: 9
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 class Solution{

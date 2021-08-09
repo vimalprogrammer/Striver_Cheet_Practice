@@ -1,5 +1,10 @@
 //Optimal 1 - Mathematical summation approach
 
+/*
+Input: 4 3 6 2 1 1
+Output: Missing-5 Repeating
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

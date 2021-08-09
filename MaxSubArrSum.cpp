@@ -1,5 +1,11 @@
 //Normal Approach O(n^2)
 
+/*
+Input: -2,-3,4,-1,-2,1,5,3
+Output: 7
+Explanation: The subarray is [4,-1,-2,1,5] has the largest sum = 7.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
