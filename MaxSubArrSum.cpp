@@ -28,6 +28,8 @@ int main()
 }
 
 //Optimal approach O(n) ----> Kadane's algorithm
+//Note here everytime the sum goes negative, we reset the sum to 0 because it make no sense to have a negative sum
+
 
 #include <bits/stdc++.h>
 using namespace std;
