@@ -1,6 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Input : A[]= 1 1 1 1
+             1 1 1 1
+             1 1 0 1
+             0 0 0 1
+
+Output : A[]= 0 0 0 1
+              0 0 0 1
+              0 0 0 0
+              0 0 0 0
+*/  
+
 class Solution
 {
     public:
