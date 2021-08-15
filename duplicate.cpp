@@ -34,3 +34,47 @@ int main()
     cout<<res;
     return 0;
 }
+
+/*
+//Hashing method - Multiple duplicates
+//TC-O(n)
+//SC-O(n)
+//Input: 1,2,2,4,5,3,5,7,1,8,3,8
+//Output: 2 5 1 3 8
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+	vector<int>repeat(vector<int>v,int temp[])
+	{
+		int cnt=0;
+		vector<int>ans;
+		for(auto it:v)
+		{
+			temp[it]+=1;
+			cnt++;
+			if(temp[it]>1)
+			{
+
+				ans.push_back(v[cnt-1]);
+			}
+		}
+		return ans;
+	}
+};
+int main()
+{
+	
+	vector<int>v={1,2,2,4,5,3,5,7,1,8,3,8};
+	int n=v.size();
+	int temp[n]={0};
+	Solution s;
+	vector<int>res=s.repeat(v,temp);
+	for(auto it:res)
+		cout<<it<<" ";
+	return 0;
+}
+*/
