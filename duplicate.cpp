@@ -87,36 +87,41 @@ int main()
           where : 2
 
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-
-void mapping(vector<string>vecOfStings)
+class Solution
 {
-    // Create a map to store the frequency of each element in vector
-map<string, int> countMap;
-// Iterate over the vector and store the frequency of each element in map
-for (auto & elem : vecOfStings)
-{
-    auto result = countMap.insert(pair<string, int>(elem, 1));
-    if (result.second == false)
-        result.first->second++;
-}
-// Iterate over the map
-for (auto & elem : countMap)
-{
-    // If frequency count is greater than 1 then its a duplicate element
-    if (elem.second > 1)
+public:
+    map<string,int>FindDuplicates(vector<string>VecStrings)
     {
-        cout << elem.first << " : " << elem.second << endl;
+        map<string,int>StrCount;
+        
+        for(auto &elem: VecStrings)
+        {
+            auto res=StrCount.insert(pair<string,int>(elem,1));
+            if(res.second==false)
+                res.first->second++;
+        }
+        return StrCount;
     }
-}
-}
+    
+};
+
 int main()
 {
-    vector<string> vecOfStings={ "at" , "hello", "hi", "there", "where", "now", "is",
-                                "that" , "hi" , "where", "at", "no", "yes", "at"};
-    mapping(vecOfStings);
+    vector<string>VecStrings;
+    string input;
+    while(cin>>input)
+        VecStrings.push_back(input);
+        
+    Solution s;    
+    map<string,int>result=s.FindDuplicates(VecStrings);
+    for(auto & it:result)
+    {
+        if(it.second>1)
+            cout<<it.first<<" : "<<it.second<<"\n";
+    }
     return 0;
 }
 
