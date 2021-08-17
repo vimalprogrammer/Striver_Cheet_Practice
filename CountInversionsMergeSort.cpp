@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Input: ar[]=[8,4,2,1]
+Output: 6
+Explanation: 8,4 | 8,2 | 8,1 | 4,2 | 4,1 | 2,1 ->> 6 combinations WRT a[i]>a[i+1]
+*/
+
 int merge(int arr[],int temp[],int left,int mid,int right)
 {
     int i,j,k;
