@@ -20,13 +20,14 @@ public:
 
 int main()
 {
-    
-    vector<int>prices;   
-    int input;
-    while(cin>>input)
-        prices.push_back(input);
+    vector<int> v;
+    string buffer;
+    int data;
+    getline(cin, buffer);
+    istringstream iss(buffer);
+    while (iss >> data)
+          v.push_back(data);
     Solution s;
-    int res=s.MaxProfit(prices);
-    cout<<res;
+    cout<<s.MaxProfit(v);
     return 0;
 }
