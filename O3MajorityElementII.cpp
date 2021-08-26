@@ -1,5 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+problem: find all elements that appear more than ⌊ n/3 ⌋ times 
+         bur defiendly not all elements appear more than ⌊ n/3 ⌋ times
+         only 2 elements appear more than ⌊ n/3 ⌋ times
+Input: [1,1,1,3,3,2,2,2]
+Output: [1,2]
+*/
+
+// O(n) time, O(1) space
+
+// 1. find the majority element
+// 2. find the number of occurrences of the majority element
+// 3. find the number of occurrences of the 2nd most frequent element
+// 4. if the number of occurrences of the 2nd most frequent element is more than ⌊ n/3 ⌋ times, return the 2 elements
+// 5. if the number of occurrences of the 2nd most frequent element is less than ⌊ n/3 ⌋ times, return the 1 element
+// 6. if the number of occurrences of the majority element is more than ⌊ n/3 ⌋ times, return the 1 element
+// 7. if the number of occurrences of the majority element is less than ⌊ n/3 ⌋ times, return the 2 elements
+
+// Boyer-Moore majority vote algorithm
 
 class Solution {
 public:
