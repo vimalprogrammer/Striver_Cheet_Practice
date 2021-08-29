@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+In a grid of size m x n, each cell has a value.
+Input: start and end point of the path, m and n
+Output: number of unique paths to reach the end point
+*/
+
 class Solution {
 public:
     
