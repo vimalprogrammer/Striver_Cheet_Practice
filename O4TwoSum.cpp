@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+    Input: nums = [2, 7, 11, 15], target = 9
+    Output: [0, 1]
+    Explanation: The sum of 2 and 7 is 9. Therefore index0 = 0, index1 = 1.
+*/
+
+//HashMap Technique Time Complexity: O(n)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) 
