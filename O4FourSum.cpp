@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+ Input: [1, 0, -1, 0, -2, 2]
+ Output: [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
+ Explanation: {a+b+c+d = target} without using 3ptr approach 
+*/
+
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) 
