@@ -7,6 +7,8 @@ using namespace std;
  Explanation: {a+b+c+d = target} without using 3ptr approach 
 */
 
+// TC: O(n^3) SC: O(1)
+
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) 
