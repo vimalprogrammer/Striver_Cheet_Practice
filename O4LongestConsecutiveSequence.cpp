@@ -7,6 +7,9 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 */
 
+//Time Complexity: O(n)+O(n)+O(n)
+//Space Complexity: O(n) used for storing the input array in a hashset
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {        
