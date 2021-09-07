@@ -7,6 +7,10 @@ Input:  arr[] = {1, 2, 3, -4, 5, -6, 7, 8, -9, 10}
 Output: 4
 The sub-array is {1, 2, 3, -4}
 Explanation: The sub-array with sum zero is {1, 2, 3, -4}
+
+Input: a[]={1,2,-2,4,-4}
+Output: 4
+The sub-array is {2, -2, 4, -4} with sum zero
 */
 
 int Solution(vector<int> &A) {
