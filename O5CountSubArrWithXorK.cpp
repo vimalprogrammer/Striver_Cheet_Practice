@@ -8,8 +8,10 @@ Output: cnt=4
 Explanation: There are 4 subarrays with sum 6.
 */   
     
+//TC: O(n log n)
+//SC: O(n)
 
-int Solution::solve(vector<int> &A, int B) {
+int Solution(vector<int> &A, int B) {
     map<int,int>mp;
     int cnt=0,xorr=0;
     for(auto it:A)
