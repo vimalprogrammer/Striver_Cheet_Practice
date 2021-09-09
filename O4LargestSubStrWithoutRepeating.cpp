@@ -64,3 +64,36 @@ public:
         return len;
      }
 };
+
+
+// My Solution TC: O(n) SC: O(n)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public: 
+    int lengthOfLongestSubstring(string s) {
+     
+        int len=0;
+        int right=0,left=0;
+        int n=s.size();
+        map<char,int>mp;//map to store the index of the character
+        for(int i=right;i<n;i++)//right pointer to traverse the string
+        {
+            if(mp.find(s[i])!=mp.end())//if the character is already present in the substring
+                left=max(left,mp[s[i]]+1);//move left to the next possible position ignoring the repeating char
+            mp[s[i]]=i;//update the right position of the character hashmap
+            len=max(len,i-left+1);//update the length of the substring 
+        }
+        return len;//return the length of the longest substring
+    }
+};
+
+int main()
+{
+    Solution s;
+    int res=s.lengthOfLongestSubstring("abcabcbb");
+    cout<<res;
+    //Output: 3
+}
