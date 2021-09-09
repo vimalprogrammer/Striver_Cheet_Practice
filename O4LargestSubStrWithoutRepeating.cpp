@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Solution {
+/*class Solution {
 public: 
     int lengthOfLongestSubstring(string s) {
     int n=s.size();
@@ -27,3 +27,4 @@ public:
     return maxx;
      }
 };
+*/
