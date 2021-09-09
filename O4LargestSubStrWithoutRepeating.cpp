@@ -50,16 +50,16 @@ public:
         int len=0;
         int left=0,right=0;
         int n=s.size();
-        vector<int>mpp(256,-1);
+        vector<int>mpp(256,-1);//256 is the size of ascii and -1 is the default value
         
         while(right<n)
         {
-            if(mpp[s[right]]!=-1)
-                left=max(mpp[s[right]]+1,left);
+            if(mpp[s[right]]!=-1)//if the character is already present in the substring
+                left=max(mpp[s[right]]+1,left);//move left to the next possible position ignoring the repeating char
             
-            mpp[s[right]]=right;
-            len=max(len,right-left+1);
-            right++;
+            mpp[s[right]]=right;//update the right position of the character
+            len=max(len,right-left+1);//update the length of the substring
+            right++;//move the right pointer
         }
         return len;
      }
