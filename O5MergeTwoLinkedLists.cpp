@@ -17,6 +17,8 @@ Output: [1->2->3->4->5->6->7->8]
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+/*
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* L1, ListNode* L2) {
@@ -41,3 +43,5 @@ public:
         return res;
     }
 };
+
+*/
